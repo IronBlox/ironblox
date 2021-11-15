@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <link rel="icon" href="pic.jpg">
+  <meta charset='UTF-8'>
+  <title>Iron Blox - Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="ccc.html">Coin Collecting Simulator</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://discord.gg/sDq5GcdjpZ">Discord</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="main">
+      <center><h1>Welcome to the Iron Blox Website!</h1></center>
+    </div>
+    <div class="submain">
+      <center>Go to the Coin Collecting Simulator page to get information about the game! Go to the discord page to get invited to our discord server!<br>Iron Blox is a small group of developers making games for Roblox.<br>The owner of Iron Blox is !Pacan#6233.<br> Our lead coder is protekti#6461.<br> Our lead builder is antekberry#9904.<br>Our secondery builder is MakuchMakuchYT#5013 <a href="https://www.youtube.com/channel/UCE2zXmOCiQD2qR4k1LG-SZA">this</a> is his channel go check it out!</center>
+    </div>
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <link rel="icon" type="image/png" href="pic.png"/>
+  <link rel="icon" href="pic.jpg">
+  <meta charset='UTF-8'>
+  <title>Iron Blox - Coin Collecting Simulator</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="ccc.html">Coin Collecting Simulator</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://discord.gg/sDq5GcdjpZ">Discord</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="main">
+      <center><h1>Coin Collecting Simulator</h1></center>
+    </div>
+    <div class="submain">
+      <center><p>Coin collecting simulator is a simulator where you can collect coins, buy perks, spend money and be a millionair! <br> The game is currently in development and will be available in 2022. <br> For more information about the game please contact a developer on <a href="https://discord.gg/sDq5GcdjpZ">discord</a>.</p></center>
+    </div>
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
